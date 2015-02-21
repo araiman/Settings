@@ -50,26 +50,23 @@ set clipboard=unnamed,autoselect
 
 " マウスの入力を受け付ける
 set mouse=a
+
 " Windows でもパスの区切り文字を / にする
 set shellslash
-
-" コマンドラインの設定
 
 " コマンドラインモードでTABキーによるファイル名補完を有効にする
 set wildmenu wildmode=list:longest,full
 " コマンドラインの履歴を10000件保存する
 set history=10000
 
-" ビープの設定
-
-"ビープ音すべてを無効にする
+" ビープ音すべてを無効にする
 set visualbell t_vb=
 set noerrorbells "エラーメッセージの表示時にビープを鳴らさない
 
-"コードに色をつける
+" コードに色をつける
 :syntax on
 
-"閉じ括弧補完
+" 閉じ括弧補完
 imap { {}<LEFT>
 imap [ []<LEFT>
 imap ( ()<LEFT>
